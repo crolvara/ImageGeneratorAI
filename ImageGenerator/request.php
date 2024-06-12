@@ -12,7 +12,7 @@ $prompt = $_POST['prompt'];
 
 $complete = $open_ai->image([
     "prompt" => $prompt,
-    "n" => 5, // number of images
+    "n" => 1, // number of images
     "size" => "256x256", // image dimension
     "response_format" => "b64_json" // use "url" for less credit usage
 ]);
